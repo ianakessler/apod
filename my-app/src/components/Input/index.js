@@ -4,6 +4,11 @@ import './input.css'
 
 const Input = (props) =>{
 
+    const date = new Date();
+    const year = date.getFullYear();
+    const month = date.getMonth() + 1; 
+    const day = date.getDate();
+
     const aoDigitar = (event) => {
         props.aoAlterado(event.target.value)
         console.log(props.value)
@@ -13,7 +18,7 @@ const Input = (props) =>{
 
         <InputMask
         className='input'
-        placeholder="2023/05/30"
+        placeholder={`${year}/${month}/${day}`}
         value={props.value}
         onChange={aoDigitar}
         mask="9999-99-99"
