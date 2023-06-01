@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Input from './components/Input';
 import axios from 'axios';
+import Footer from './components/footer';
 
 function App() {
 
@@ -58,6 +59,8 @@ function App() {
 
             )}
       </section>
+      
+      <Footer/>
 
     </div>
   );

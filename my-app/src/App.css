@@ -35,6 +35,10 @@ form{
   scale: 1.04;
 }
 
+section{
+  min-height: 700px;
+}
+
 .card{
   background-color: rgb(186, 186, 186);
   max-width: 900px;
@@ -58,4 +62,11 @@ form{
   color: #000000;
   text-align: justify;
   padding: 16px 8px 16px 8px;
+}
+
+
+@media screen and (max-width: 311px){
+  .submit{
+    margin-top: 16px;
+  }
 }
